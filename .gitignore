@@ -13,3 +13,4 @@ deliverables/
 
 # Virtual environments
 .venv
+.env
