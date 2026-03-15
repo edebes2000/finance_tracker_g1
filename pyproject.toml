@@ -1,0 +1,27 @@
+[project]
+name = "finance-tracker-g1"
+version = "0.1.1"
+description = "A personal finance tracking package for processing Santander bank statements."
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "pandas",
+    "openpyxl",
+    "pytest>=9.0.2",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[dependency-groups]
+dev = [
+    "build>=1.4.0",
+    "twine>=6.2.0",
+]
